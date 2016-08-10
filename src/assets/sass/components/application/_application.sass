@@ -1,0 +1,66 @@
+.c-application
+  display: table
+  width: 100%
+  max-width: 985px
+  margin: 10px auto
+  border: 1px solid $color-gamma
+  border-radius: 4px
+
+  @media screen and (max-width: 800px)
+    margin-bottom: 35px
+
+    &:nth-child(2n+1)
+      background-color: #f7f7f7
+
+    &__component
+      padding: 20px
+      text-align: center
+
+      &:nth-child(2),
+      &:nth-child(3)
+        border-top: 1px solid $color-gamma
+
+  @media screen and (min-width: 801px)
+    &__component
+      display: table-cell
+      padding: 15px
+      vertical-align: middle
+
+      &:nth-child(2),
+      &:nth-child(3)
+        width: 20%
+        text-align: center
+        border-left: 1px solid $color-gamma
+
+  &__image
+    display: inline-block
+    width: 55px
+    height: 55px
+    margin-right: 5px
+    vertical-align: middle
+    background-image: url("http://placehold.it/55x55")
+    background-position: center
+    background-size: cover
+
+  &__title
+    font-size: 16px
+    display: inline-block
+    margin-top: 0
+    margin-bottom: 0
+    padding-top: 0
+    vertical-align: middle
+    color: $color-alpha
+
+  &__subtitle
+    font-size: 14px
+    font-weight: 300
+    display: block
+    margin-top: 8px
+    color: #9ca3aa
+
+  &__icon
+    margin-right: 6px
+
+  &__capacity
+
+  &__status

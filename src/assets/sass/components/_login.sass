@@ -1,0 +1,89 @@
+// --------------------------------------------------------------------------
+//  @Page Login
+// --------------------------------------------------------------------------
+.page-login
+  padding-top: 0
+
+.login-section
+  display: flex
+  flex-direction: column
+  height: 100vh
+  padding: 50px 15px 150px 15px
+  padding-top: 50px
+  background-image: url("../img/bg1.jpg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  align-items: center
+  justify-content: center
+
+  .logo
+    display: block
+    margin: 0 auto 45px auto
+
+.form-login-container
+  padding: 70px 15px 40px 15px
+  border-radius: 5px
+  background: #fff
+
+  +centerElement(470px)
+
+@media screen and (max-width: 768px)
+  .login-section
+    padding-top: 0
+    padding-bottom: 0
+
+@media screen and (min-width: 320px) and (max-width: 440px)
+  .form-login-container
+    padding-top: 20px
+    padding-bottom: 15px
+
+// --------------------------------------------------------------------------
+//  @Login form
+// --------------------------------------------------------------------------
+.form-login
+  +centerElement(380px)
+
+  &__input
+    font-size: 16px
+    height: 49px
+    margin-bottom: 20px
+
+  &__submit
+    font-size: 16px
+    font-weight: 300
+    width: 100%
+    margin-top: 10px
+    padding: 14px 10px
+    text-transform: uppercase
+    border: none
+    background: #1a8fee
+
+    &:hover
+      background: #1a8fee - 25
+
+  &__info
+    margin-top: 40px
+    padding-top: 25px
+    border-top: 1px solid #cbd6da
+    font-size: 16.5px
+
+    +centerElement(380px)
+
+    p
+      margin-bottom: 5px
+
+    a
+      color: #899095
+
+  &__column:last-child
+    text-align: right
+
+  &__create-account a
+    color: #79b0f1
+
+  &__column
+    @media screen and (max-width: 450px)
+      float: none
+      width: 100%
+      text-align: center !important

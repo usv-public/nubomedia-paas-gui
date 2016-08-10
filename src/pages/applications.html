@@ -1,0 +1,48 @@
+<section class="applications-container">
+
+  {{#each applications.items}}
+    <!-- Application -->
+    <article class="c-application">
+
+      <div class="c-application__component">
+        <span class="c-application__image"></span>
+
+        <h3 class="c-application__title">
+          {{this.title}}
+          <span class="c-application__subtitle">
+            {{this.subtitle}}
+          </span>
+        </h3>
+      </div><!-- /application component -->
+
+      <div class="c-application__component">
+        <h3 class="c-application__title">
+          <span class="c-application__icon glyphicon glyphicon-signal"></span> App capacity
+          <span class="c-application__subtitle">
+            4 Servers / 15 Users
+          </span>
+        </h3>
+      </div><!-- /application component -->
+
+      <div class="c-application__component">
+        <h3 class="c-application__title">
+          <span class="c-application__icon glyphicon glyphicon-ok"></span> Status
+          <span class="c-application__subtitle">
+            {{this.status}}
+          </span>
+        </h3>
+      </div><!-- /application component -->
+
+    </article><!-- /Application -->
+    {{/each}}
+
+</section>
+
+
+
+
+
+
+
+
+

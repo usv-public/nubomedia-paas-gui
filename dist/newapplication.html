@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+
+  <head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front end prototype setup</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="assets/css/app.css">
+
+  </head>
+
+  <body class="">
+
+      <!-- Page header -->
+      <header class="page-header">
+      
+        <section class=page-top-bar>
+      
+          <span class="hamburger-container hamburger-container--left [ js-toggle-left-menu ]">
+            <span class="hamburger"></span>
+          </span>
+      
+          <span class="hamburger-container [ js-toggle-top-menu ]">
+            <span class="hamburger"></span>
+          </span>
+        </section>
+      
+        <div class="page-header__container">
+      
+          <ul class="header-menu">
+      
+            <li class="header-menu__item">
+              <a href="#">
+                <span class="header-menu__icon"></span>
+              </a>
+            </li><!-- /item -->
+      
+            <li class="header-menu__item">
+              <a href="#">
+                <span class="header-menu__icon"></span>
+              </a>
+            </li><!-- /item -->
+      
+      
+            <li class="[ user-dropdown header-menu__item ] dropdown">
+              <a href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false">
+                  <span class="header-menu__icon user-avatar"></span>
+                  John Doe
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="link-user">
+                    <span class="header-menu__icon user-avatar user-avatar--big"></span>
+                    <span class="user-info">
+                      <span class="user-info__name">John Doe</span>
+                      <span class="user-info__app">3 apps created</span>
+                    </span>
+                  </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">Email notifications</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li><!-- /item -->
+      
+          </ul>
+      
+        </div><!-- /container -->
+      </header><!-- /Page header -->
+      
+      
+
+
+
+    <main class="main">
+
+      <!-- Page aside -->
+      <section class="c-page-aside">
+        <ul class="c-menu-aside">
+      
+          <li class="c-menu-aside__item">
+            <a href="#" class="c-menu-aside__link c-menu-aside__link--user">
+              <span class="c-menu-aside__link-text">Hello, Mircea</span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="#" class="c-menu-aside__link">
+              <span class="c-menu-aside__icon"></span>
+              <span class="c-menu-aside__link-text">Overview</span>
+              <span class="c-menu-aside__icon c-menu-aside__icon--mobile"></span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="#" class="c-menu-aside__link">
+              <span class="c-menu-aside__icon"></span>
+              <span class="c-menu-aside__link-text">My Applications</span>
+              <span class="c-menu-aside__icon c-menu-aside__icon--mobile"></span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="#" class="c-menu-aside__link">
+              <span class="c-menu-aside__icon"></span>
+              <span class="c-menu-aside__link-text">Service Status</span>
+              <span class="c-menu-aside__icon c-menu-aside__icon--mobile"></span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="#" class="c-menu-aside__link">
+              <span class="c-menu-aside__icon"></span>
+              <span class="c-menu-aside__link-text">Documentation</span>
+              <span class="c-menu-aside__icon c-menu-aside__icon--mobile"></span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="#" class="c-menu-aside__link">
+              <span class="c-menu-aside__icon"></span>
+              <span class="c-menu-aside__link-text">Suport</span>
+              <span class="c-menu-aside__icon c-menu-aside__icon--mobile"></span>
+            </a>
+          </li>
+      
+      
+          <!-- DEMO LINKS, doar pentru a putea naviga prin pagini, -->
+      
+          <li class="c-menu-aside__item">
+            <a href="#" class="c-menu-aside__link">
+              <span class="c-menu-aside__link-text">Bellow Demo links</span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="./login.html" class="c-menu-aside__link">
+              <span class="c-menu-aside__link-text">Login</span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="./applications.html" class="c-menu-aside__link">
+              <span class="c-menu-aside__link-text">Applications</span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="./newapplication.html" class="c-menu-aside__link">
+              <span class="c-menu-aside__link-text">New application</span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="./tabs.html" class="c-menu-aside__link">
+              <span class="c-menu-aside__link-text">Tabs</span>
+            </a>
+          </li>
+      
+        </ul>
+      </section><!-- Page aside -->
+      
+
+
+
+      <!-- Page content -->
+      <section class="page-container">
+        <!-- Breadcrum container -->
+        <section class="breadcrumb-container">
+          <!-- Breadcrum -->
+          <ul class="c-breadcrumb">
+        
+            <li class="c-breadcrumb__item">
+              My Applications
+            </li>
+        
+            <li class="c-breadcrumb__item">
+              Other Stuff
+            </li>
+        
+          </ul><!-- Breadcrum -->
+        </section><!-- /Breadcrum container -->
+        
+
+
+
+
+
+        <section class="page-content">
+          <!-- Form new app -->
+          <form class="form form-horizontal form-new-app">
+          
+            <!-- Application name -->
+            <div class="form-group input">
+              <label for="app-name" class="col-md-4 control-label input__label">
+                Application name
+              </label>
+          
+              <div class="col-md-8">
+                <input type="text" class="form-control input__field" id="app-name" >
+              </div>
+            </div><!-- /Application name -->
+          
+            <!-- Application repository -->
+            <div class="form-group input">
+              <label for="app-repository" class="col-md-4 control-label input__label">
+                Application repository
+              </label>
+          
+              <div class="col-md-8">
+                <input type="text" class="form-control input__field" id="app-repository">
+              </div>
+            </div><!-- /Application repository -->
+          
+            <!-- Application logo -->
+            <div class="form-group input">
+              <label for="app-logo" class="col-md-4 control-label input__label">
+                Application logo
+                <span class="input__subtitle">
+                  Tip: Use different visuals in order to emphasize the application type. <span>Example</span>
+                </span>
+              </label>
+          
+              <div class="col-md-8">
+                <input type="file" class="form-control input__field" id="app-logo">
+              </div>
+            </div><!-- /Application logo -->
+          
+            <!-- Nr of media servers -->
+            <div class="form-group input">
+              <label for="app-media-servers" class="col-md-4 control-label input__label">
+                Number of media servers
+              </label>
+          
+              <div class="col-md-8">
+                <input type="number" class="form-control input__field" id="app-media-servers">
+              </div>
+            </div><!-- /Nr of media servers -->
+          
+            <!-- Flavour type -->
+            <div class="form-group input">
+              <label for="app-flavour-type" class="col-md-4 control-label input__label">
+                Flavour type
+              </label>
+          
+              <div class="col-md-8">
+                <input type="text" class="form-control input__field" id="app-flavour-type">
+              </div>
+            </div><!-- /Flavour type -->
+          
+            <!-- /Scalling -->
+            <div class="form-group input">
+              <label for="" class="col-md-4 control-label input__label">
+                Scalling
+              </label>
+          
+              <div class="col-md-8 [ js-toggle-input-container ]">
+          
+                <label class="control control--inline control--checkbox">
+                  <input type="checkbox" class="[ js-toggle-inputs ]">
+                  <div class="control__indicator"></div>
+                  Tresholds
+                </label>
+          
+                <div class="input input--inline [js-control]">
+                  <label for="app-scalling-in" class="input__label">In</label>
+                  <input type="number" class="form-control input__field [ js-input-to-toggle ]" id="app-scalling-in" disabled>
+                </div>
+          
+                <div class="input input--inline [js-control]">
+                  <label for="app-scalling-out" class="input__label">Out</label>
+                  <input type="number" class="form-control input__field [ js-input-to-toggle ]" id="app-scalling-out" disabled>
+                </div>
+          
+              </div>
+            </div><!-- /Scalling -->
+          
+            <!-- /QoS -->
+            <div class="form-group input">
+              <label for="app-flavour-type" class="col-md-4 control-label input__label">
+                Scalling
+              </label>
+          
+              <div class="col-md-8 [ js-toggle-input-container ]">
+          
+                <label class="control control--inline control--checkbox">
+                  <input type="checkbox" class="js-toggle-inputs">
+                  <div class="control__indicator"></div>
+                  Tresholds
+                </label>
+          
+                <label class="control control--inline control--radio [ js-control ]">
+                  <input type="radio" name="radio" class="js-input-to-toggle" disabled>
+                  <div class="control__indicator"></div>
+                  Gold
+                </label>
+          
+                <label class="control control--inline control--radio [ js-control ]">
+                  <input type="radio" class="js-input-to-toggle"  name="radio" disabled>
+                  <div class="control__indicator"></div>
+                  Silver
+                </label>
+          
+                <label class="control control--inline control--radio [ js-control ]">
+                  <input type="radio" class="js-input-to-toggle" name="radio" disabled>
+                  <div class="control__indicator"></div>
+                  Bronze
+                </label>
+          
+              </div>
+            </div><!-- /QoS -->
+          
+          </form><!-- Form new app -->
+          
+        </section>
+
+      </section><!-- Page content -->
+
+    </main><!-- /Page content -->
+
+
+
+
+      <!-- Footer -->
+      <footer class="page-footer">
+
+      </footer><!-- Footer -->
+
+
+
+    <section class="menu-overlay [ js-menu-overlay ]">
+
+    </section>
+
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+
+</html>

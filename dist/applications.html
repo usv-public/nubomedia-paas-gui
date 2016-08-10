@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+
+  <head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front end prototype setup</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="assets/css/app.css">
+
+  </head>
+
+  <body class="">
+
+      <!-- Page header -->
+      <header class="page-header">
+      
+        <section class=page-top-bar>
+      
+          <span class="hamburger-container hamburger-container--left [ js-toggle-left-menu ]">
+            <span class="hamburger"></span>
+          </span>
+      
+          <span class="hamburger-container [ js-toggle-top-menu ]">
+            <span class="hamburger"></span>
+          </span>
+        </section>
+      
+        <div class="page-header__container">
+      
+          <ul class="header-menu">
+      
+            <li class="header-menu__item">
+              <a href="#">
+                <span class="header-menu__icon"></span>
+              </a>
+            </li><!-- /item -->
+      
+            <li class="header-menu__item">
+              <a href="#">
+                <span class="header-menu__icon"></span>
+              </a>
+            </li><!-- /item -->
+      
+      
+            <li class="[ user-dropdown header-menu__item ] dropdown">
+              <a href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false">
+                  <span class="header-menu__icon user-avatar"></span>
+                  John Doe
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="link-user">
+                    <span class="header-menu__icon user-avatar user-avatar--big"></span>
+                    <span class="user-info">
+                      <span class="user-info__name">John Doe</span>
+                      <span class="user-info__app">3 apps created</span>
+                    </span>
+                  </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">Email notifications</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li><!-- /item -->
+      
+          </ul>
+      
+        </div><!-- /container -->
+      </header><!-- /Page header -->
+      
+      
+
+
+
+    <main class="main">
+
+      <!-- Page aside -->
+      <section class="c-page-aside">
+        <ul class="c-menu-aside">
+      
+          <li class="c-menu-aside__item">
+            <a href="#" class="c-menu-aside__link c-menu-aside__link--user">
+              <span class="c-menu-aside__link-text">Hello, Mircea</span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="#" class="c-menu-aside__link">
+              <span class="c-menu-aside__icon"></span>
+              <span class="c-menu-aside__link-text">Overview</span>
+              <span class="c-menu-aside__icon c-menu-aside__icon--mobile"></span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="#" class="c-menu-aside__link">
+              <span class="c-menu-aside__icon"></span>
+              <span class="c-menu-aside__link-text">My Applications</span>
+              <span class="c-menu-aside__icon c-menu-aside__icon--mobile"></span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="#" class="c-menu-aside__link">
+              <span class="c-menu-aside__icon"></span>
+              <span class="c-menu-aside__link-text">Service Status</span>
+              <span class="c-menu-aside__icon c-menu-aside__icon--mobile"></span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="#" class="c-menu-aside__link">
+              <span class="c-menu-aside__icon"></span>
+              <span class="c-menu-aside__link-text">Documentation</span>
+              <span class="c-menu-aside__icon c-menu-aside__icon--mobile"></span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="#" class="c-menu-aside__link">
+              <span class="c-menu-aside__icon"></span>
+              <span class="c-menu-aside__link-text">Suport</span>
+              <span class="c-menu-aside__icon c-menu-aside__icon--mobile"></span>
+            </a>
+          </li>
+      
+      
+          <!-- DEMO LINKS, doar pentru a putea naviga prin pagini, -->
+      
+          <li class="c-menu-aside__item">
+            <a href="#" class="c-menu-aside__link">
+              <span class="c-menu-aside__link-text">Bellow Demo links</span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="./login.html" class="c-menu-aside__link">
+              <span class="c-menu-aside__link-text">Login</span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="./applications.html" class="c-menu-aside__link">
+              <span class="c-menu-aside__link-text">Applications</span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="./newapplication.html" class="c-menu-aside__link">
+              <span class="c-menu-aside__link-text">New application</span>
+            </a>
+          </li>
+      
+          <li class="c-menu-aside__item">
+            <a href="./tabs.html" class="c-menu-aside__link">
+              <span class="c-menu-aside__link-text">Tabs</span>
+            </a>
+          </li>
+      
+        </ul>
+      </section><!-- Page aside -->
+      
+
+
+
+      <!-- Page content -->
+      <section class="page-container">
+        <!-- Breadcrum container -->
+        <section class="breadcrumb-container">
+          <!-- Breadcrum -->
+          <ul class="c-breadcrumb">
+        
+            <li class="c-breadcrumb__item">
+              My Applications
+            </li>
+        
+            <li class="c-breadcrumb__item">
+              Other Stuff
+            </li>
+        
+          </ul><!-- Breadcrum -->
+        </section><!-- /Breadcrum container -->
+        
+
+
+
+
+
+        <section class="page-content">
+          <section class="applications-container">
+          
+              <!-- Application -->
+              <article class="c-application">
+          
+                <div class="c-application__component">
+                  <span class="c-application__image"></span>
+          
+                  <h3 class="c-application__title">
+                    Autoscalling applications
+                    <span class="c-application__subtitle">
+                      autoscalling.nbm.io
+                    </span>
+                  </h3>
+                </div><!-- /application component -->
+          
+                <div class="c-application__component">
+                  <h3 class="c-application__title">
+                    <span class="c-application__icon glyphicon glyphicon-signal"></span> App capacity
+                    <span class="c-application__subtitle">
+                      4 Servers / 15 Users
+                    </span>
+                  </h3>
+                </div><!-- /application component -->
+          
+                <div class="c-application__component">
+                  <h3 class="c-application__title">
+                    <span class="c-application__icon glyphicon glyphicon-ok"></span> Status
+                    <span class="c-application__subtitle">
+                      Working
+                    </span>
+                  </h3>
+                </div><!-- /application component -->
+          
+              </article><!-- /Application -->
+              <!-- Application -->
+              <article class="c-application">
+          
+                <div class="c-application__component">
+                  <span class="c-application__image"></span>
+          
+                  <h3 class="c-application__title">
+                    Wathermio
+                    <span class="c-application__subtitle">
+                      watherm.nbm.io
+                    </span>
+                  </h3>
+                </div><!-- /application component -->
+          
+                <div class="c-application__component">
+                  <h3 class="c-application__title">
+                    <span class="c-application__icon glyphicon glyphicon-signal"></span> App capacity
+                    <span class="c-application__subtitle">
+                      4 Servers / 15 Users
+                    </span>
+                  </h3>
+                </div><!-- /application component -->
+          
+                <div class="c-application__component">
+                  <h3 class="c-application__title">
+                    <span class="c-application__icon glyphicon glyphicon-ok"></span> Status
+                    <span class="c-application__subtitle">
+                      Deployment
+                    </span>
+                  </h3>
+                </div><!-- /application component -->
+          
+              </article><!-- /Application -->
+              <!-- Application -->
+              <article class="c-application">
+          
+                <div class="c-application__component">
+                  <span class="c-application__image"></span>
+          
+                  <h3 class="c-application__title">
+                    Toucode
+                    <span class="c-application__subtitle">
+                      toucode.nbm.io
+                    </span>
+                  </h3>
+                </div><!-- /application component -->
+          
+                <div class="c-application__component">
+                  <h3 class="c-application__title">
+                    <span class="c-application__icon glyphicon glyphicon-signal"></span> App capacity
+                    <span class="c-application__subtitle">
+                      4 Servers / 15 Users
+                    </span>
+                  </h3>
+                </div><!-- /application component -->
+          
+                <div class="c-application__component">
+                  <h3 class="c-application__title">
+                    <span class="c-application__icon glyphicon glyphicon-ok"></span> Status
+                    <span class="c-application__subtitle">
+                      Unpublished
+                    </span>
+                  </h3>
+                </div><!-- /application component -->
+          
+              </article><!-- /Application -->
+              <!-- Application -->
+              <article class="c-application">
+          
+                <div class="c-application__component">
+                  <span class="c-application__image"></span>
+          
+                  <h3 class="c-application__title">
+                    Ghost screen theme
+                    <span class="c-application__subtitle">
+                      ghostscreen.co
+                    </span>
+                  </h3>
+                </div><!-- /application component -->
+          
+                <div class="c-application__component">
+                  <h3 class="c-application__title">
+                    <span class="c-application__icon glyphicon glyphicon-signal"></span> App capacity
+                    <span class="c-application__subtitle">
+                      4 Servers / 15 Users
+                    </span>
+                  </h3>
+                </div><!-- /application component -->
+          
+                <div class="c-application__component">
+                  <h3 class="c-application__title">
+                    <span class="c-application__icon glyphicon glyphicon-ok"></span> Status
+                    <span class="c-application__subtitle">
+                      Domain error
+                    </span>
+                  </h3>
+                </div><!-- /application component -->
+          
+              </article><!-- /Application -->
+              <!-- Application -->
+              <article class="c-application">
+          
+                <div class="c-application__component">
+                  <span class="c-application__image"></span>
+          
+                  <h3 class="c-application__title">
+                    Autodial plugin
+                    <span class="c-application__subtitle">
+                      autodial.skype.com
+                    </span>
+                  </h3>
+                </div><!-- /application component -->
+          
+                <div class="c-application__component">
+                  <h3 class="c-application__title">
+                    <span class="c-application__icon glyphicon glyphicon-signal"></span> App capacity
+                    <span class="c-application__subtitle">
+                      4 Servers / 15 Users
+                    </span>
+                  </h3>
+                </div><!-- /application component -->
+          
+                <div class="c-application__component">
+                  <h3 class="c-application__title">
+                    <span class="c-application__icon glyphicon glyphicon-ok"></span> Status
+                    <span class="c-application__subtitle">
+                      Working
+                    </span>
+                  </h3>
+                </div><!-- /application component -->
+          
+              </article><!-- /Application -->
+          
+          </section>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </section>
+
+      </section><!-- Page content -->
+
+    </main><!-- /Page content -->
+
+
+
+
+      <!-- Footer -->
+      <footer class="page-footer">
+
+      </footer><!-- Footer -->
+
+
+
+    <section class="menu-overlay [ js-menu-overlay ]">
+
+    </section>
+
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,94 @@
+<!-- Tabs container -->
+<section class="tabs-container">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+
+    <!-- Resources -->
+    <li role="presentation" class="active">
+      <a href="#resources" aria-controls="resources" role="tab" data-toggle="tab">
+      Resources
+      </a>
+    </li><!-- /Resources -->
+
+
+    <!-- Deploy -->
+    <li role="presentation">
+      <a href="#deploy" aria-controls="deploy" role="tab" data-toggle="tab">
+      Deploy
+      </a>
+    </li><!-- /Deploy -->
+
+
+    <!-- Metrics -->
+    <li role="presentation">
+      <a href="#metrics" aria-controls="metrics" role="tab" data-toggle="tab">
+      Metrics
+      </a>
+    </li><!-- /Metrics -->
+
+
+    <!-- Activity -->
+    <li role="presentation">
+      <a href="#activity" aria-controls="activity" role="tab" data-toggle="tab">
+      Activity
+      </a>
+    </li><!-- /Activity -->
+
+    <!-- Logs -->
+    <li role="presentation">
+      <a href="#logs" aria-controls="logs" role="tab" data-toggle="tab">
+      Logs
+      </a>
+    </li><!-- /Logs -->
+
+
+    <!-- Settings -->
+    <li role="presentation">
+      <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+      Settings
+      </a>
+    </li><!-- /Settings  -->
+
+  </ul><!-- /Nav tabs -->
+
+
+
+
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+    <!-- Resources tabpanel -->
+    <div role="tabpanel" class="tab-pane active" id="resources">
+      {{>resources}}
+    </div><!-- /Resources tab -->
+
+    <!-- Deploy -->
+    <div role="tabpanel" class="tab-pane" id="deploy">
+      {{>deploy}}
+    </div><!-- /Deploy -->
+
+    <!-- Metrics -->
+    <div role="tabpanel" class="tab-pane" id="metrics">
+      {{>metrics}}
+    </div><!-- /Metrics -->
+
+    <!-- Activity -->
+    <div role="tabpanel" class="tab-pane" id="activity">
+      {{>activity}}
+    </div><!-- /Activity -->
+
+    <!-- Logs -->
+    <div role="tabpanel" class="tab-pane" id="logs">
+      {{>logs}}
+    </div><!-- /Logs -->
+
+    <!-- Settings -->
+    <div role="tabpanel" class="tab-pane" id="settings">
+     {{>settings}}
+    </div><!-- /Settings -->
+
+  </div><!-- /Tab panes -->
+
+</section><!-- /Tabs container -->

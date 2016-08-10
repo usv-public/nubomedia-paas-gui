@@ -1,0 +1,124 @@
+<!-- Form new app -->
+<form class="form form-horizontal form-new-app">
+
+  <!-- Application name -->
+  <div class="form-group input">
+    <label for="app-name" class="col-md-4 control-label input__label">
+      Application name
+    </label>
+
+    <div class="col-md-8">
+      <input type="text" class="form-control input__field" id="app-name" >
+    </div>
+  </div><!-- /Application name -->
+
+  <!-- Application repository -->
+  <div class="form-group input">
+    <label for="app-repository" class="col-md-4 control-label input__label">
+      Application repository
+    </label>
+
+    <div class="col-md-8">
+      <input type="text" class="form-control input__field" id="app-repository">
+    </div>
+  </div><!-- /Application repository -->
+
+  <!-- Application logo -->
+  <div class="form-group input">
+    <label for="app-logo" class="col-md-4 control-label input__label">
+      Application logo
+      <span class="input__subtitle">
+        Tip: Use different visuals in order to emphasize the application type. <span>Example</span>
+      </span>
+    </label>
+
+    <div class="col-md-8">
+      <input type="file" class="form-control input__field" id="app-logo">
+    </div>
+  </div><!-- /Application logo -->
+
+  <!-- Nr of media servers -->
+  <div class="form-group input">
+    <label for="app-media-servers" class="col-md-4 control-label input__label">
+      Number of media servers
+    </label>
+
+    <div class="col-md-8">
+      <input type="number" class="form-control input__field" id="app-media-servers">
+    </div>
+  </div><!-- /Nr of media servers -->
+
+  <!-- Flavour type -->
+  <div class="form-group input">
+    <label for="app-flavour-type" class="col-md-4 control-label input__label">
+      Flavour type
+    </label>
+
+    <div class="col-md-8">
+      <input type="text" class="form-control input__field" id="app-flavour-type">
+    </div>
+  </div><!-- /Flavour type -->
+
+  <!-- /Scalling -->
+  <div class="form-group input">
+    <label for="" class="col-md-4 control-label input__label">
+      Scalling
+    </label>
+
+    <div class="col-md-8 [ js-toggle-input-container ]">
+
+      <label class="control control--inline control--checkbox">
+        <input type="checkbox" class="[ js-toggle-inputs ]">
+        <div class="control__indicator"></div>
+        Tresholds
+      </label>
+
+      <div class="input input--inline [js-control]">
+        <label for="app-scalling-in" class="input__label">In</label>
+        <input type="number" class="form-control input__field [ js-input-to-toggle ]" id="app-scalling-in" disabled>
+      </div>
+
+      <div class="input input--inline [js-control]">
+        <label for="app-scalling-out" class="input__label">Out</label>
+        <input type="number" class="form-control input__field [ js-input-to-toggle ]" id="app-scalling-out" disabled>
+      </div>
+
+    </div>
+  </div><!-- /Scalling -->
+
+  <!-- /QoS -->
+  <div class="form-group input">
+    <label for="app-flavour-type" class="col-md-4 control-label input__label">
+      Scalling
+    </label>
+
+    <div class="col-md-8 [ js-toggle-input-container ]">
+
+      <label class="control control--inline control--checkbox">
+        <input type="checkbox" class="js-toggle-inputs">
+        <div class="control__indicator"></div>
+        Tresholds
+      </label>
+
+      <label class="control control--inline control--radio [ js-control ]">
+        <input type="radio" name="radio" class="js-input-to-toggle" disabled>
+        <div class="control__indicator"></div>
+        Gold
+      </label>
+
+      <label class="control control--inline control--radio [ js-control ]">
+        <input type="radio" class="js-input-to-toggle"  name="radio" disabled>
+        <div class="control__indicator"></div>
+        Silver
+      </label>
+
+      <label class="control control--inline control--radio [ js-control ]">
+        <input type="radio" class="js-input-to-toggle" name="radio" disabled>
+        <div class="control__indicator"></div>
+        Bronze
+      </label>
+
+    </div>
+  </div><!-- /QoS -->
+
+</form><!-- Form new app -->
